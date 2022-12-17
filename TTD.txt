@@ -1,0 +1,15 @@
+
+Code back end
+Use processor class
+Use enum for operations!
+
+
+
+Preview screenshot in readme
+
+About window
+
+
+
+
+Add Caesar cipher utility?
