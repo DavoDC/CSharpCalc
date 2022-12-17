@@ -1,5 +1,8 @@
+
+// Project namespace
 namespace CSharpCalc
 {
+    // Main program
     internal static class Program
     {
         /// <summary>
@@ -8,12 +11,11 @@ namespace CSharpCalc
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Initialize app config
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
 
-            Console.WriteLine("test");
+            // Initialize GUI
+            Application.Run(new GUI());
         }
     }
 }
