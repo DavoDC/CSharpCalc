@@ -1,7 +1,10 @@
 
-Code back end
-Use processor class
-Use enum for operations!
+
+MAKE ROBUST = try putting in bad values, text!
+
+add more operations like modulo!! check for others
+
+Parse text as int -> catch error -> use error label + readonly text box below result
 
 
 
