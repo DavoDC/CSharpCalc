@@ -1,10 +1,13 @@
 namespace CSharpCalc
 {
+    /**
+     * GUI 'back-end' code
+     */
     public partial class GUI : Form
     {
         /**
          * GUI Constructor
-         */ 
+         */
         public GUI()
         {
             InitializeComponent();
@@ -47,6 +50,16 @@ namespace CSharpCalc
                     result = num1 - num2;
                     break;
 
+                // Modulo
+                case "%":
+                    result = num1 % num2;
+                    break;
+
+                // Raise to Power
+                case "^":
+                    result = Math.Pow(num1, num2);
+                    break;
+
             }
 
             // Show result
@@ -55,25 +68,66 @@ namespace CSharpCalc
 
         /**
          * Multiply button action
-         */ 
+         */
         private void Mult_Click(object sender, EventArgs e)
         {
             doOperation(sender);
         }
 
+        /**
+         * Division button action
+         */
         private void Div_Click(object sender, EventArgs e)
         {
             doOperation(sender);
         }
 
+        /**
+         * Addition button action
+         */
         private void Add_Click(object sender, EventArgs e)
         {
             doOperation(sender);
         }
 
+        /**
+         * Subtraction button action
+         */
         private void Sub_Click(object sender, EventArgs e)
         {
             doOperation(sender);
+        }
+
+        /**
+         * Modulo button action
+         */
+        private void Mod_Click(object sender, EventArgs e)
+        {
+            doOperation(sender);
+        }
+
+        /**
+         * 'Raise to Power' button action
+         */
+        private void Pow_Click(object sender, EventArgs e)
+        {
+            doOperation(sender);
+        }
+
+        /**
+         * Places result in num 1 box
+         */
+        private void Num1Place_Click(object sender, EventArgs e)
+        {
+            Num1.Text = Result.Text;
+        }
+
+        /**
+         * Places result in num 2 box
+         */
+        private void Num2Place_Click(object sender, EventArgs e)
+        {
+            Num2.Text = Result.Text;
         }
     }
 }

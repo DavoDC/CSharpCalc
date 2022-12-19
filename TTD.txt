@@ -1,18 +1,14 @@
 
 
+
 MAKE ROBUST = try putting in bad values, text!
-
-add more operations like modulo!! check for others
-
 Parse text as int -> catch error -> use error label + readonly text box below result
 
 
-
-Preview screenshot in readme
-
-About window
+Add top bar menu = Add About window,  Add Caesar cipher utility?
 
 
 
 
-Add Caesar cipher utility?
+
+Update preview screenshot in readme
