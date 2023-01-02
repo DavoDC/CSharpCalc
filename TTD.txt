@@ -1,14 +1,9 @@
 
 
 
-MAKE ROBUST = try putting in bad values, text!
-Parse text as int -> catch error -> use error label + readonly text box below result
+Add top bar menu = Add About window
+
+Add caesar cipher utility! add loops/lists
 
 
-Add top bar menu = Add About window,  Add Caesar cipher utility?
-
-
-
-
-
-Update preview screenshot in readme
+Update preview screenshot in readme (regularly)

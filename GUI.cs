@@ -19,8 +19,27 @@ namespace CSharpCalc
         private void doOperation(object sender)
         {
             // Get numbers
-            double num1 = Convert.ToDouble(Num1.Text);
-            double num2 = Convert.ToDouble(Num2.Text);
+            double num1;
+            double num2;
+            try
+            {
+                // Try parsing as doubles
+                num1 = Convert.ToDouble(Num1.Text);
+                num2 = Convert.ToDouble(Num2.Text);
+            }
+            catch (Exception)
+            {
+                // Notify if there was an error parsing
+                string errMsg = "Invalid numerical input. Please enter valid numbers.";
+                Console.WriteLine(errMsg);
+                Error.Text = errMsg;
+                return;
+            }
+
+            // If parsing was successful
+            Console.WriteLine("Parsed doubles successfully");
+            Error.Text = "None";
+
 
             // Get operation
             Button button = (Button) sender;
