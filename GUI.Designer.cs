@@ -44,6 +44,8 @@
             this.Pow = new System.Windows.Forms.Button();
             this.Num1Place = new System.Windows.Forms.Button();
             this.Num2Place = new System.Windows.Forms.Button();
+            this.ErrorLabel = new System.Windows.Forms.Label();
+            this.Error = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Result
@@ -54,7 +56,7 @@
             this.Result.Location = new System.Drawing.Point(200, 351);
             this.Result.Name = "Result";
             this.Result.ReadOnly = true;
-            this.Result.Size = new System.Drawing.Size(606, 40);
+            this.Result.Size = new System.Drawing.Size(652, 40);
             this.Result.TabIndex = 1;
             this.Result.Text = "0";
             // 
@@ -74,7 +76,7 @@
             this.Num2Label.AutoSize = true;
             this.Num2Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Num2Label.ForeColor = System.Drawing.Color.White;
-            this.Num2Label.Location = new System.Drawing.Point(34, 262);
+            this.Num2Label.Location = new System.Drawing.Point(34, 266);
             this.Num2Label.Name = "Num2Label";
             this.Num2Label.Size = new System.Drawing.Size(159, 32);
             this.Num2Label.TabIndex = 3;
@@ -85,7 +87,7 @@
             this.OpLabel.AutoSize = true;
             this.OpLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.OpLabel.ForeColor = System.Drawing.Color.White;
-            this.OpLabel.Location = new System.Drawing.Point(34, 191);
+            this.OpLabel.Location = new System.Drawing.Point(34, 187);
             this.OpLabel.Name = "OpLabel";
             this.OpLabel.Size = new System.Drawing.Size(129, 32);
             this.OpLabel.TabIndex = 4;
@@ -106,7 +108,7 @@
             // 
             this.Mult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Mult.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Mult.Location = new System.Drawing.Point(200, 181);
+            this.Mult.Location = new System.Drawing.Point(200, 172);
             this.Mult.Name = "Mult";
             this.Mult.Size = new System.Drawing.Size(70, 60);
             this.Mult.TabIndex = 6;
@@ -118,7 +120,7 @@
             // 
             this.Div.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Div.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Div.Location = new System.Drawing.Point(308, 181);
+            this.Div.Location = new System.Drawing.Point(321, 172);
             this.Div.Name = "Div";
             this.Div.Size = new System.Drawing.Size(70, 60);
             this.Div.TabIndex = 7;
@@ -130,7 +132,7 @@
             // 
             this.Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Sub.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Sub.Location = new System.Drawing.Point(520, 181);
+            this.Sub.Location = new System.Drawing.Point(547, 172);
             this.Sub.Name = "Sub";
             this.Sub.Size = new System.Drawing.Size(70, 60);
             this.Sub.TabIndex = 8;
@@ -142,7 +144,7 @@
             // 
             this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Add.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Add.Location = new System.Drawing.Point(419, 181);
+            this.Add.Location = new System.Drawing.Point(434, 172);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(70, 60);
             this.Add.TabIndex = 9;
@@ -166,7 +168,7 @@
             this.Num1.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Num1.Location = new System.Drawing.Point(200, 100);
             this.Num1.Name = "Num1";
-            this.Num1.Size = new System.Drawing.Size(390, 40);
+            this.Num1.Size = new System.Drawing.Size(412, 40);
             this.Num1.TabIndex = 12;
             this.Num1.Text = "0";
             // 
@@ -175,7 +177,7 @@
             this.Num2.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Num2.Location = new System.Drawing.Point(200, 262);
             this.Num2.Name = "Num2";
-            this.Num2.Size = new System.Drawing.Size(390, 40);
+            this.Num2.Size = new System.Drawing.Size(412, 40);
             this.Num2.TabIndex = 13;
             this.Num2.Text = "0";
             // 
@@ -183,7 +185,7 @@
             // 
             this.Mod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Mod.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Mod.Location = new System.Drawing.Point(625, 181);
+            this.Mod.Location = new System.Drawing.Point(665, 172);
             this.Mod.Name = "Mod";
             this.Mod.Size = new System.Drawing.Size(70, 60);
             this.Mod.TabIndex = 14;
@@ -195,7 +197,7 @@
             // 
             this.Pow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Pow.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Pow.Location = new System.Drawing.Point(736, 181);
+            this.Pow.Location = new System.Drawing.Point(782, 172);
             this.Pow.Name = "Pow";
             this.Pow.Size = new System.Drawing.Size(70, 60);
             this.Pow.TabIndex = 15;
@@ -207,9 +209,9 @@
             // 
             this.Num1Place.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Num1Place.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Num1Place.Location = new System.Drawing.Point(607, 99);
+            this.Num1Place.Location = new System.Drawing.Point(618, 99);
             this.Num1Place.Name = "Num1Place";
-            this.Num1Place.Size = new System.Drawing.Size(199, 41);
+            this.Num1Place.Size = new System.Drawing.Size(234, 41);
             this.Num1Place.TabIndex = 16;
             this.Num1Place.Text = "Place Results";
             this.Num1Place.UseVisualStyleBackColor = false;
@@ -219,20 +221,45 @@
             // 
             this.Num2Place.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Num2Place.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Num2Place.Location = new System.Drawing.Point(607, 259);
+            this.Num2Place.Location = new System.Drawing.Point(618, 259);
             this.Num2Place.Name = "Num2Place";
-            this.Num2Place.Size = new System.Drawing.Size(199, 41);
+            this.Num2Place.Size = new System.Drawing.Size(234, 41);
             this.Num2Place.TabIndex = 17;
             this.Num2Place.Text = "Place Results";
             this.Num2Place.UseVisualStyleBackColor = false;
             this.Num2Place.Click += new System.EventHandler(this.Num2Place_Click);
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ErrorLabel.ForeColor = System.Drawing.Color.White;
+            this.ErrorLabel.Location = new System.Drawing.Point(34, 417);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(72, 32);
+            this.ErrorLabel.TabIndex = 19;
+            this.ErrorLabel.Text = "Error";
+            // 
+            // Error
+            // 
+            this.Error.BackColor = System.Drawing.Color.Thistle;
+            this.Error.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Error.ForeColor = System.Drawing.Color.Black;
+            this.Error.Location = new System.Drawing.Point(200, 420);
+            this.Error.Name = "Error";
+            this.Error.ReadOnly = true;
+            this.Error.Size = new System.Drawing.Size(652, 33);
+            this.Error.TabIndex = 18;
+            this.Error.Text = "None";
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(859, 452);
+            this.ClientSize = new System.Drawing.Size(905, 484);
+            this.Controls.Add(this.ErrorLabel);
+            this.Controls.Add(this.Error);
             this.Controls.Add(this.Num2Place);
             this.Controls.Add(this.Num1Place);
             this.Controls.Add(this.Pow);
@@ -273,5 +300,7 @@
         private Button Pow;
         private Button Num1Place;
         private Button Num2Place;
+        private Label ErrorLabel;
+        private TextBox Error;
     }
 }
