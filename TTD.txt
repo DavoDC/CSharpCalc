@@ -1,9 +1,0 @@
-
-
-
-Add top bar menu = Add About window
-
-Add caesar cipher utility! add loops/lists
-
-
-Update preview screenshot in readme (regularly)

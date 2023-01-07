@@ -5,12 +5,19 @@ namespace CSharpCalc
      */
     public partial class GUI : Form
     {
+        // About box
+        private AboutBox ab;
+
         /**
          * GUI Constructor
          */
         public GUI()
         {
+            // Initialize components
             InitializeComponent();
+
+            // Initialize About box
+            ab = new AboutBox();
         }
 
         /**
@@ -147,6 +154,15 @@ namespace CSharpCalc
         private void Num2Place_Click(object sender, EventArgs e)
         {
             Num2.Text = Result.Text;
+        }
+
+        /**
+         * Opens About popup when About menu item clicked
+         */
+        private void AboutMenu_Click(object sender, EventArgs e)
+        {
+            // Show about box
+            ab.Show();
         }
     }
 }
