@@ -14,7 +14,7 @@ namespace CSharpCalc
         public AboutBox()
         {
             InitializeComponent();
-            
+
             // Removed unneeded changing of form contents here
         }
 
