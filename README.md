@@ -1,5 +1,9 @@
 # CSharpCalc
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G31WKOCN)
+
+
+
 A Windows Forms calculator application built in C# - my first C# project.
 
 ![Preview](https://github.com/DavoDC/CSharpCalc/blob/main/Preview.png)
