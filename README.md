@@ -16,7 +16,11 @@ A Windows Forms calculator application built in C# - my first C# project.
 
 ## Running
 
-Open in Visual Studio and build, or run the compiled executable directly.
+1. Open `PROJECT/CSharpCalc.sln` in Visual Studio
+2. Build with **Ctrl+Shift+B** (or Build menu)
+3. Run with **F5**
+
+The compiled executable lands in `PROJECT/bin/Release/` or `PROJECT/bin/Debug/` after building.
 
 ## Tech
 
